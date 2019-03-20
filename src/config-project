@@ -1,0 +1,44 @@
+npm i @fortawesome/free-regular-svg-icons
+
+npm i @fortawesome/free-solid-svg-icons
+
+npm i @fortawesome/free-brands-svg-icons 
+
+npm i @fortawesome/angular-fontawesome
+
+npm i @fortawesome/fontawesome-svg-core
+
+en app.module 
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+
+library.add(fas,far,fab);
+
+
+creamos un folder components
+
+y dento de ella un modulo components.module
+ionic g m components
+
+creamos los componentes header y menu uy popinfo (para el popover)
+
+en el componets.module declaramos el header footer , menu y popinfo
+
+importamos el ionicModule y el router module
+
+creamos el folder interface 
+y dentro de el el file menu.ts
+ionic g i interface/menu
+
+creamos el servicio de datos 
+
+ionic g s services/dataservice --spec=false
+
+generamos el foder dentro de assets  data 
+y dentor de el menu.json , iniciado como vacio []
+
+tarbajamos en los componentes header, footer y menu  ( ver )

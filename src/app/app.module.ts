@@ -9,10 +9,24 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library} from '@fortawesome/fontawesome-svg-core';
+
+
+library.add(fas,far,fab);
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    FontAwesomeModule,
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,
